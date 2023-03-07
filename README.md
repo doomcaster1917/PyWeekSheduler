@@ -27,10 +27,12 @@ calendar.draw_calendar(YOUR DATA)
 ```
 CalendarDrawer(print_all_hours=True, lang_ru=True)
 ```
-Flag lang_ru means you choose russian language, flag print_all_hours means you choose 24-hours mode. As well you can pass the class list of custom hours in format: [start_hour, finish_hour], like this 
+You can pass the class argumens of custom hours, like this 
 
 ```
-CalendarDrawer(min_hour_and_max_hour=[9,19])
+CalendarDrawer(min_hour = 9, max_hour = 19)
+
+But by default max, min hours equal 10:00 and 20:00.
 ```
 
 ### Passed data's format
@@ -40,7 +42,7 @@ Function draw_calendar takes data as format [datetime.datetime, str]. You can se
 data_set_en = [
         [datetime.datetime.strptime('2022-08-15 11:00:00', '%Y-%m-%d %H:%M:%S'), 'What is love?'],
         [datetime.datetime.strptime('2022-08-16 13:00:00', '%Y-%m-%d %H:%M:%S'), 'Baby dont hurt me']
-        }
+        ]
 ```
 
 ### Format package returns
